@@ -1,0 +1,17 @@
+Scalable Communtiy Detection and Link Prediction for large networks
+
+Author: Akshay Bhat 
+Contact: akshaybhat [at] gmail.com
+
+Please visit http://www.akshaybhat.com/LPMR for more information
+
+Organization:
+Folder				Description
+lp				Code for Communtiy Detection 
+
+pre				Code to pre processing the edgelist file also 				for preprocessing twitter network
+
+twitter			Code for genrating results from the twitter 				dataset
+
+License: Research purpose only
+
