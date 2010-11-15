@@ -1,4 +1,4 @@
-Scalable Communtiy Detection and Link Prediction for large networks
+Scalable Community Detection using Label Propagation and Map Reduce
 
 Author: Akshay Bhat 
 Contact: akshaybhat [at] gmail.com
@@ -9,9 +9,24 @@ Organization:
 Folder				Description
 lp				Code for Communtiy Detection 
 
-pre				Code to pre processing the edgelist file also 				for preprocessing twitter network
+pre				Code to pre processing the edgelist file 
 
-twitter			Code for genrating results from the twitter 				dataset
+twitter			Code for automating everything for twitter dataset
+
+Usage:
+note that this is an experimental code, and not a library. Thus it involves multiple hacks.
+
+You will need a working hadoop installation, this code has been tested using a cluster which used hadoop 0.19. Thus It should work very well with versions > 0.19. 
+Still you will need to change path to hadoop streaming jar file.
+ 
+Download Twitter_rv.net from http://an.kaist.ac.kr/traces/WWW2010.html
+
+Download numeric2users.tar.gz from above website, extract it, rename it as Users.txt and put it outside the LPMR folder. (sorry if this sounds weird, will fix this soon) 
+
+cd into twitter directory and execute
+./run-twitter.sh twitter_rv.net
+
+[you will most likely get errors due to hadoop not being ]
 
 License: Research purpose only
 

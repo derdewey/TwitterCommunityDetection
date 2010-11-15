@@ -6,7 +6,7 @@ cd ..
 cd pre
 hadoop jar /usr/local/hadoop/contrib/streaming/hadoop-0.19.2-streaming.jar -input $1 -output Twitter/Net.pegasus -mapper 'mapper.py Reverse' -reducer NONE -file mapper.py
 hadoop jar /usr/local/hadoop/contrib/streaming/hadoop-0.19.2-streaming.jar -input $1 -output Twitter/Net.exclude -mapper 'mapper.py Reverse' -reducer reducer.py -file mapper.py -file reducer.py -file ../twitter/exclude.txt
-hadoop jar /usr/local/hadoop/contrib/streaming/hadoop-0.19.2-streaming.jar -input $1 -output Twitter/Net.complete -mapper 'mapper.py Reverse' -reducer reducer.py -file mapper.py -file reducer.py -file ../twitter/exclude.txt
+hadoop jar /usr/local/hadoop/contrib/streaming/hadoop-0.19.2-streaming.jar -input $1 -output Twitter/Net.complete -mapper 'mapper.py Reverse' -reducer reducer.py -file mapper.py -file reducer.py
 cd ..
 
 cd lp
